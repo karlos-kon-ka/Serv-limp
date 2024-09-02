@@ -1,0 +1,461 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.fondo {
+  background: url('/img/fondocr.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.555);
+  margin-top: 40px;
+  margin-bottom: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.slider {
+  margin: 0;
+  padding: 40px;
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  border-radius: 10px; 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+
+span {
+  color: #2b6cb0; 
+  font-weight: bold; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+  transition: color 0.3s ease, text-shadow 0.3s ease; 
+}
+
+span:hover {
+  color: #2c5282; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+/* Sección de comentarios */
+.comentarios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  margin-top: 30px;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e2e8f0 100%);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  color: #2d3748;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Sección de servicios */
+.servicios {
+  margin: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.servicios h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.presupuesto {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto; /* Centra el presupuesto horizontalmente */
+  text-align: left;
+}
+
+.presupuesto h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.presupuesto label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+#enlace{
+  font-size: 1.2rem;
+  font-family: "Playwrite CU", cursive;
+}
+
+.presupuesto select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.presupuesto p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.presupuesto p:last-child {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+
+.disposicion {
+  margin-top: 40px;
+}
+
+.disposicion h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.info-geografica {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.icono {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+
+.icono p {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.mapa {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.mapa img {
+  max-width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.letras{
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  color: #f9fafc;
+}
+/* Sección principal */
+.principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+.locales ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.locales li {
+  font-size: 1.2rem;
+  color: #20310a;
+  background-color: #d5d7da;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.locales li:hover {
+  background-color: #cbd5e0;
+  transform: translateY(-5px);
+}
+
+/* Estilos para tratos y años */
+.tratos, .años {
+  text-align: center;
+  font-size: 1.0rem;
+  color: #4a5568;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente en el flex container */
+  align-items: center; /* Centra el contenido verticalmente en el flex container */
+}
+
+.tratos:hover, .años:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.tratos p, .años p {
+  margin: 0;
+}
+
+/* Estilos para el contenedor del DatePicker */
+.date-picker-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Estilos para el input del DatePicker */
+.date-picker-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.date-picker-input:focus {
+  border-color: #1976d2; 
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.25); 
+  outline: none;
+}
+
+/* Estilos para el calendario desplegable */
+.react-datepicker__triangle {
+  display: none;
+}
+
+.react-datepicker__header {
+  background-color: #1976d2; 
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+}
+
+.react-datepicker__current-month {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.react-datepicker__day {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.react-datepicker__day--selected {
+  background-color: #1976d2; 
+  color: #fff;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #1976d2; 
+  color: #fff;
+}
+#inicio{
+  background: rgb(174,238,190);
+  background: linear-gradient(349deg, rgba(174,238,190,1) 0%, rgba(189,188,164,1) 92%);
+}
+.letter {
+  display: inline-block;
+  margin-right: 0.5rem; /* Espacio entre letras por defecto */
+  color: #f3e8e6; 
+  text-shadow: 1px 1px 3px black;
+}
+/* Media queries */
+@media (max-width: 768px) {
+  .principal {
+    grid-template-columns: 1fr; 
+    gap: 10px; 
+  }
+
+  .locales {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+  }
+
+  .tratos, .años {
+    grid-column: 1 / 2; 
+    margin-bottom: 20px; 
+  }
+
+  .comentarios {
+    padding: 30px 10px; 
+  }
+}
+
+
+.locales ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.locales li {
+  font-size: 1.2rem;
+  color: #2d3748;
+  background-color: #d5d7da;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+/* Estilos generales para .locales */
+.locales ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.locales li {
+  font-size: 1.5rem;
+  color: #0256e7;
+  background-color: #d5d7da;
+  padding: 10px 20px;
+  text-align: center;
+  width: 250px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+  background-color: #1976d2;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+  position: relative;
+  bottom: 0;
+}
+
+.titulo-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.titulo-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.titulo-text span {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+/* Media query para pantallas con un ancho menor a 750px */
+@media (max-width: 750px) {
+  .titulo-text {
+    font-size: 2rem; /* Ajusta el tamaño del texto */
+    padding: 20px; /* Ajusta el padding si es necesario */
+  }
+
+  .titulo-text span {
+    margin-right: 0.3rem; /* Ajusta el margen entre letras */
+  }
+}
+
+.title-container {
+  text-align: center;
+  padding: 50px; /* Valor por defecto */
+}
+
+.title-container h1 {
+  font-size: 3rem; /* Tamaño de fuente por defecto */
+}
+
+.letter {
+  display: inline-block;
+  margin-right: 0.5rem; /* Espacio entre letras por defecto */
+}
+
+@media (max-width: 750px) {
+ 
+  .title-container {
+    padding: 20px;
+  }
+
+  .title-container h1 {
+    font-size: 2.5rem; 
+  }
+
+  .letter {
+    margin-right: 0.3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .date-picker-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  /* Estilos para el input del DatePicker */
+  .date-picker-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    z-index: 2;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .title-container {
+    padding: 15px; /* Aún menos padding en pantallas muy pequeñas */
+  }
+
+  .title-container h1 {
+    font-size: 2rem; /* Reducción adicional del tamaño de fuente */
+  }
+
+  .letter {
+    margin-right: 0.2rem; /* Ajuste fino del espacio entre letras */
+  }
+}
