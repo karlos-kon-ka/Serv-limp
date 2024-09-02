@@ -27,8 +27,7 @@ function Servicios() {
         <h2>Servicios</h2>
         <div>
           <p>
-            Disponemos de tipos de servicios según su necesidad. <br />
-            Adaptándonos al tipo de servicio que usted necesita.
+          Ofrecemos una gama de servicios <span>personalizados</span> para sus necesidades específicas, <br/> ajustándonos a sus requerimientos <span>particulares</span>.
           </p>
         </div>
       </div>
