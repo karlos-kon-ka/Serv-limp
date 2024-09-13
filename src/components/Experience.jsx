@@ -50,6 +50,7 @@ function CleaningLocationsSlider() {
     <section className='slider' >
      
       <Container  maxWidth="md" sx={{ marginTop: 4 }}>
+        <h1>Servicio de Limpiezas </h1>
       
       <Slider {...settings}>
         {locales.map((local, index) => (

@@ -2,3 +2,9 @@ body{margin: 0;
     background-color: antiquewhite;
 padding: 0;}
 
+* {
+    -webkit-user-select: none; /* Safari y Chrome */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer y Edge */
+    user-select: none;         /* Soporte estándar */
+}
